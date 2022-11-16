@@ -5,6 +5,7 @@ import {
   Mesh,
   PointLight,
   AmbientLight,
+  OctahedronGeometry,
 } from "three";
 
 const generateTorus = (
@@ -49,8 +50,10 @@ const generateSolidSphere = (
 };
 
 const generateLighting = () => {
-  const pointLight = new PointLight(0xffffff);
+  const pointLight = new PointLight("0xffffff");
   pointLight.position.set(20, 20, 20);
+
+  // Change this for some funky colors
   const ambientLight = new AmbientLight(0xffffff);
 
   return { pointLight, ambientLight };

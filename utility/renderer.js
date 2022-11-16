@@ -19,7 +19,8 @@ const createCamera = () => {
     0.1,
     1000
   );
-  camera.position.setZ(30);
+  camera.position.setZ(60);
+  camera.position.setX(80)
 
   return camera;
 };

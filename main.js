@@ -1,3 +1,8 @@
+/**
+ * Use Main for the generation of objects and scene creation
+ * along with functions that are dependent on the scene
+ *
+ */
 import "./style.css";
 import {
   generateSphere,
@@ -15,7 +20,6 @@ import rotate from "./utility/tools.js";
 import * as THREE from "three";
 
 const scene = new THREE.Scene();
-
 const renderer = await createRenderer();
 const camera = createCamera();
 const controls = createController(camera, renderer);
